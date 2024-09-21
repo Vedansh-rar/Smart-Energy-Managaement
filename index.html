@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Energy Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>Smart Energy Management</h1>
+        <nav>
+            <ul id="nav">
+                <li><a href="#home" onclick="scrollToSection('home')">Home</a></li>
+                <li><a href="#features" onclick="scrollToSection('features')">Features</a></li>
+                <li><a href="#dashboard" onclick="scrollToSection('dashboard')">Dashboard</a></li>
+                <li><a href="#tips" onclick="scrollToSection('tips')">Energy Tips</a></li>
+                <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+                <li><a href="#login" onclick="scrollToSection('login')">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="content">
+            <h2>Optimize Your Energy Usage</h2>
+            <p>Monitor, control, and optimize your energy consumption with our intelligent Smart Energy Management System.</p>
+            <button class="cta-button" onclick="scrollToSection('features')">Learn More</button>
+        </div>
+        <div class="image-container">
+            <!--<img src="images/energy-management.jpg" alt="Smart Energy">-->
+            <img src="images.webp" alt="">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <h2>Key Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Real-Time Monitoring</h3>
+                <p>Track energy usage of all connected devices and appliances in real-time.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-leaf"></i>
+                <h3>Eco-Friendly Solutions</h3>
+                <p>Automatically optimize energy consumption for a greener lifestyle.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Advanced Analytics</h3>
+                <p>Receive detailed insights and data visualization on your energy usage patterns.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile App Integration</h3>
+                <p>Monitor and control energy usage remotely via our mobile app.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="section">
+        <h2>Energy Consumption Dashboard</h2>
+        <div id="dashboard-charts">
+            <canvas id="dailyUsageChart"></canvas>
+            <canvas id="applianceUsageChart"></canvas>
+        </div>
+    </section>
+
+    <!-- Energy Tips Section -->
+    <section id="tips" class="section">
+        <h2>Energy Saving Tips</h2>
+        <div id="tips-container"></div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login" class="section">
+        <h2>Login to Manage Your Account</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Your Username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Your Password">
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email">
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Smart Energy Management. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
